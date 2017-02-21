@@ -119,6 +119,7 @@ module.exports = function proxy(host, options) {
               if (!sent) {
                 res.send(rspd);
               }
+              res.rspd = rspd;
             });
           } else {
             // see issue https://github.com/villadora/express-http-proxy/issues/104
